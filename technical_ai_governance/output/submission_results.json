@@ -1,0 +1,185 @@
+{
+  "metadata": {
+    "generated_at": "2026-02-01T15:51:08.285532",
+    "data_source": "Epoch AI Notable AI Models",
+    "forecast_origin": 2026.0,
+    "forecast_horizon": 3
+  },
+  "config": {
+    "start_year": 2012,
+    "end_year": 2025,
+    "n_bootstrap": 2000,
+    "backtest_horizons": [
+      1,
+      2,
+      3
+    ]
+  },
+  "model": {
+    "name": "piecewise",
+    "r_squared": 0.9850526841097904,
+    "slope": 0.0,
+    "intercept": 0.0,
+    "calibration_factor": 1.146310806274414
+  },
+  "threshold_taxonomy": {
+    "policy_defined": {
+      "EU AI Act Systemic Risk": 25.0,
+      "US EO 14110 Reporting": 26.0
+    },
+    "scenario_markers": {
+      "10\u00d7 US EO (10\u00b2\u2077)": 27.0,
+      "100\u00d7 US EO (10\u00b2\u2078)": 28.0,
+      "~3000\u00d7 US EO (10\u00b2\u2079\u00b7\u2075)": 29.5
+    },
+    "note": "Only policy_defined thresholds are defensible. Scenario markers are for forecasting only."
+  },
+  "crossing_estimates": [
+    {
+      "threshold": "EU AI Act Systemic Risk",
+      "value_log_flop": 25.0,
+      "crossing_median": 2022.4693286884644,
+      "crossing_lo_50": 2022.4693286884644,
+      "crossing_hi_50": 2022.4693286884644,
+      "crossing_lo_95": 2022.4693286884644,
+      "crossing_hi_95": 2022.4693286884644,
+      "years_from_origin": -3.5306713115355706,
+      "already_crossed": true,
+      "is_policy_defined": true
+    },
+    {
+      "threshold": "US EO 14110 Reporting",
+      "value_log_flop": 26.0,
+      "crossing_median": 2023.958861349475,
+      "crossing_lo_50": 2023.958861349475,
+      "crossing_hi_50": 2023.958861349475,
+      "crossing_lo_95": 2023.958861349475,
+      "crossing_hi_95": 2023.958861349475,
+      "years_from_origin": -2.0411386505249993,
+      "already_crossed": true,
+      "is_policy_defined": true
+    },
+    {
+      "threshold": "10\u00d7 US EO (10\u00b2\u2077)",
+      "value_log_flop": 27.0,
+      "crossing_median": 2026.0,
+      "crossing_lo_50": 2026.0,
+      "crossing_hi_50": 2026.0,
+      "crossing_lo_95": 2026.0,
+      "crossing_hi_95": 2026.4839221876432,
+      "years_from_origin": 0.0,
+      "already_crossed": false,
+      "is_policy_defined": false
+    },
+    {
+      "threshold": "100\u00d7 US EO (10\u00b2\u2078)",
+      "value_log_flop": 28.0,
+      "crossing_median": 2026.8055048491437,
+      "crossing_lo_50": 2026.4196503590122,
+      "crossing_hi_50": 2027.1939582787338,
+      "crossing_lo_95": 2026.0,
+      "crossing_hi_95": 2028.0470487135115,
+      "years_from_origin": 0.8055048491437447,
+      "already_crossed": false,
+      "is_policy_defined": false
+    },
+    {
+      "threshold": "~3000\u00d7 US EO (10\u00b2\u2079\u00b7\u2075)",
+      "value_log_flop": 29.5,
+      "crossing_median": 2028.82414170349,
+      "crossing_lo_50": 2028.423821332882,
+      "crossing_hi_50": 2029.1526502130807,
+      "crossing_lo_95": 2027.7733265590373,
+      "crossing_hi_95": 2029.4559453424981,
+      "years_from_origin": 2.8241417034901133,
+      "already_crossed": false,
+      "is_policy_defined": false
+    }
+  ],
+  "forecast": {
+    "years": [
+      2026.0,
+      2026.5,
+      2027.0,
+      2027.5,
+      2028.0,
+      2028.5,
+      2029.0,
+      2029.5
+    ],
+    "median": [
+      27.371536559786293,
+      27.728055243281723,
+      28.06324513048301,
+      28.39884567243054,
+      28.71245950223415,
+      29.064226081139658,
+      29.397386609442094,
+      29.736636894927514
+    ],
+    "lo_90": [
+      26.526229750173492,
+      26.897603293358056,
+      27.159931580443402,
+      27.51071792087132,
+      27.770830816179252,
+      28.101553486382784,
+      28.428076679088374,
+      28.72492785660444
+    ],
+    "hi_90": [
+      28.216843369399093,
+      28.55850719320539,
+      28.96655868052262,
+      29.28697342398976,
+      29.654088188289048,
+      30.026898675896533,
+      30.366696539795814,
+      30.748345933250587
+    ]
+  },
+  "backtest_performance": {
+    "model": "piecewise",
+    "n_forecasts": 18,
+    "mae": 0.6322893092080961,
+    "rmse": 0.7541964215415428,
+    "coverage_90": 0.8888888888888888
+  },
+  "model_comparison": [
+    {
+      "model": "naive",
+      "r_squared": 0.0,
+      "aic": 46.69503563342071,
+      "bic": 47.334092963035964,
+      "residual_std": 2.7127998098689514
+    },
+    {
+      "model": "linear",
+      "r_squared": 0.9663362814014579,
+      "aic": -16.572721535681232,
+      "bic": -15.294606876450715,
+      "residual_std": 0.5180597401320951
+    },
+    {
+      "model": "exponential",
+      "r_squared": 0.9663362814014579,
+      "aic": -16.572721535681232,
+      "bic": -15.294606876450715,
+      "residual_std": 0.5180597401320951
+    },
+    {
+      "model": "quadratic",
+      "r_squared": 0.9687334591807817,
+      "aic": -15.606931154008137,
+      "bic": -13.689759165162362,
+      "residual_std": 0.5214744055679837
+    },
+    {
+      "model": "piecewise",
+      "r_squared": 0.9850526841097904,
+      "aic": -23.9391663226911,
+      "bic": -21.382937004230065,
+      "residual_std": 0.3781560290697385
+    }
+  ]
+}
